@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+
+    <link rel="shortcut icon" href="sun.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <script src="js/moment-with-locales.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+<body>
+
+<section class="weather">
+
+    <div class="weather__today-info">
+        <div class="weather__today">
+            <p class="weather__today-cell current-time"></p>
+            <p class="weather__today-cell current-date"></p>
+            <p class="weather__today-cell current-week-day"></p>
+        </div>
+        <img class="weather__today-img" src="" id="current-img"/>
+        <div class="weather__today">
+            <p class="weather__today-cell city-name"></p>
+            <p class="weather__today-cell"> <span class="current-temp"></span></p>
+            <p class="weather__today-cell current-descr"></p>
+        </div>
+    </div>
+
+    <div class="weather__week">
+        <div class="weather__row">
+            <p class="weather__table-day forecast-1-date"></p>
+            <img id="forecast-1-icon" src="" />
+            <p class="weather__table-temp forecast-1-temp"></p>
+        </div>
+        <div class="weather__row">
+            <p class="weather__table-day forecast-2-date"></p>
+            <img id="forecast-2-icon" src="" />
+            <p class="weather__table-temp forecast-2-temp"></p>
+        </div>
+        <div class="weather__row">
+            <p class="weather__table-day forecast-3-date"></p>
+            <img id="forecast-3-icon" src="" />
+            <p class="weather__table-temp forecast-3-temp"></p>
+        </div>
+        <div class="weather__row">
+            <p class="weather__table-day forecast-4-date"></p>
+            <img id="forecast-4-icon" src="" />
+            <p class="weather__table-temp forecast-4-temp"></p>
+        </div>
+
+    </div>
+
+    <div class="sub-week"></div>
+
+</section>
+
+
+<script src="js/index.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>

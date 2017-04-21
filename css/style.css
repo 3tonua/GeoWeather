@@ -14,7 +14,7 @@ body {
     height: 230px;
     background-color: #6a88ff;
     margin: 20px auto;
-    background-image: url("sunset.jpg");
+    background-image: url("./../img/sunset.jpg");
     background-size: cover;
     border-radius: 5px
 }
@@ -69,7 +69,6 @@ body {
     float: left;
     height: 90%;
     border-right: 1px solid rgba(255, 255, 255, 0.4);
-    /*margin-bottom: 5px*/
 }
 .weather__row:last-child {
     border-right: none;
